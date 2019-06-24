@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="commonCss/header.css" /> 
+		<link rel="stylesheet" href="css/login.css" />
+		<script src="js/jquery.js"></script>		
+	</head>
+	<body>
+		<section id="header"></section>
+		<section id="re"></section>
+		<!--<section id="header02"></section>-->
+	</body>
+	<script>	
+		$(function( ){
+			$('#header').load("commonHtml/header02.html");
+			$('#re').load("commonHtml/login02.html");		
+			$.getScript("commonJS/login02.js")
+			//$('#header02').load("commonHtml/header.html");
+		})
+	</script>
+</html>
